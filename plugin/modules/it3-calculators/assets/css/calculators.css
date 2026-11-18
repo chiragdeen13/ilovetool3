@@ -1,0 +1,57 @@
+/* ============ iLoveTool3 Calculators CSS v2 ============ */
+.it3-wrap{max-width:900px;margin:0 auto;padding:10px;font-family:inherit}
+.it3-calc{background:#fff;border-radius:16px;padding:28px;box-shadow:0 6px 24px rgba(0,0,0,.08);border:1px solid #eef2f7}
+.it3-calc-title{font-size:22px;margin:0 0 8px;color:#1e293b;display:flex;align-items:center;gap:8px}
+.it3-emoji{font-size:26px}
+.it3-note{margin:0 0 18px;color:#64748b;font-size:14px}
+.it3-field{margin-bottom:16px}
+.it3-field label{display:block;font-weight:600;margin-bottom:6px;color:#334155;font-size:14px}
+.it3-field input[type=number],.it3-field input[type=date],.it3-field input[type=time],.it3-field select,.it3-field textarea{width:100%;padding:12px 15px;border:2px solid #e2e8f0;border-radius:9px;font-size:15px;background:#f8fafc;transition:border-color .25s;box-sizing:border-box}
+.it3-field input:focus,.it3-field select:focus,.it3-field textarea:focus{outline:none;border-color:#4f46e5;background:#fff}
+.it3-field textarea{resize:vertical;line-height:1.6;font-family:inherit}
+.it3-row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.it3-btn{display:inline-block;padding:13px 30px;background:linear-gradient(135deg,#4f46e5,#6366f1);color:#fff;border:none;border-radius:9px;font-size:15px;font-weight:600;cursor:pointer;transition:transform .2s,box-shadow .2s;margin-right:8px;margin-top:4px}
+.it3-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(79,70,229,.35);background:linear-gradient(135deg,#4338ca,#4f46e5)}
+.it3-btn-light{background:#f1f5f9;color:#475569!important}
+.it3-btn-light:hover{background:#e2e8f0;box-shadow:none;transform:none}
+/* Results */
+.it3-result{background:linear-gradient(135deg,#eef2ff,#ecfeff);border-radius:12px;padding:18px 20px;margin-top:18px;border-left:4px solid #4f46e5}
+.it3-res-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px dashed #c7d2fe;flex-wrap:wrap;gap:6px;text-align:right}
+.it3-res-row:last-child{border-bottom:none}
+.it3-res-row span{color:#475569;font-size:14px}
+.it3-res-row strong{font-size:17px;color:#1e293b;margin-left:auto}
+.it3-highlight{color:#4f46e5!important;font-size:20px!important}
+.it3-green{color:#059669!important}
+.it3-blue{color:#2563eb!important}
+.it3-res-big{text-align:center;font-size:24px;font-weight:700;color:#1e293b;padding:10px;line-height:1.5}
+/* Error */
+.it3-error{background:#fef2f2;color:#dc2626;padding:12px 16px;border-radius:9px;margin-top:15px;font-size:14px;font-weight:500;border-left:4px solid #ef4444}
+/* Stats grid (word counter) */
+.it3-stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:12px;margin-top:18px}
+.it3-stat-box{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:16px 10px;text-align:center}
+.it3-stat-box strong{display:block;font-size:22px;color:#4f46e5}
+.it3-stat-box span{color:#64748b;font-size:11px;text-transform:uppercase;letter-spacing:.5px}
+/* Password + checks */
+.it3-checks{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px}
+.it3-check{display:flex;align-items:center;gap:8px;padding:10px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;cursor:pointer;font-size:14px}
+.it3-check input{accent-color:#4f46e5;width:16px;height:16px}
+.it3-pw-box{display:flex;align-items:center;justify-content:space-between;gap:10px;background:#1e293b;border-radius:10px;padding:15px 18px;flex-wrap:wrap}
+.it3-pw-box code{color:#a5b4fc;font-size:16px;word-break:break-all;flex:1}
+.it3-copy-btn{padding:8px 16px;background:#4f46e5;color:#fff;border:none;border-radius:7px;cursor:pointer;font-size:13px;font-weight:600;white-space:nowrap}
+.it3-copy-btn:hover{background:#6366f1}
+.it3-strength{margin-top:12px;font-size:14px;color:#475569}
+input[type=range]{width:100%;accent-color:#4f46e5;height:6px}
+/* Random number chips */
+.it3-chips-wrap{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;padding:15px 0 20px}
+.it3-num-chip{display:inline-block;background:#4f46e5;color:#fff;border-radius:50%;min-width:52px;height:52px;line-height:52px;text-align:center;font-weight:700;font-size:17px;padding:0 8px}
+/* Responsive */
+@media(max-width:600px){
+    .it3-calc{padding:20px}
+    .it3-row2,.it3-checks{grid-template-columns:1fr}
+    .it3-btn{width:100%;margin-bottom:8px;margin-right:0}
+    .it3-calc-title{font-size:19px}
+    .it3-highlight{font-size:18px!important}
+    .it3-stats-grid{grid-template-columns:repeat(2,1fr)}
+    .it3-res-big{font-size:20px}
+    .it3-num-chip{min-width:44px;height:44px;line-height:44px;font-size:15px}
+}

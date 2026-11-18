@@ -1,0 +1,53 @@
+/* ============ IMEI Check Services CSS v3 ============ */
+.imei-wrap{max-width:700px;margin:0 auto;padding:20px;font-family:inherit}
+.imei-box{background:#fff;border-radius:14px;box-shadow:0 10px 30px rgba(0,0,0,.1);overflow:hidden}
+.imei-header{background:linear-gradient(135deg,#4f46e5,#06b6d4);color:#fff;padding:35px 25px;text-align:center}
+.imei-big-icon{font-size:50px;margin-bottom:10px}
+.imei-header h2{margin:0 0 8px;font-size:26px;color:#fff}
+.imei-header p{margin:0;opacity:.9;font-size:15px}
+.imei-form{padding:28px}
+.imei-label{display:block;font-weight:600;margin-bottom:8px;color:#1e293b}
+.imei-input-row{display:flex;gap:10px}
+.imei-input-row input{flex:1;padding:14px 18px;font-size:17px;border:2px solid #e2e8f0;border-radius:9px;transition:border .3s;box-sizing:border-box;min-width:0}
+.imei-input-row input:focus{outline:none;border-color:#4f46e5}
+.imei-btn{padding:14px 28px;background:#4f46e5;color:#fff;border:none;border-radius:9px;font-size:16px;font-weight:600;cursor:pointer;transition:background .3s}
+.imei-btn:hover{background:#4338ca}
+.imei-hint{display:block;margin-top:8px;color:#64748b;font-size:13px}
+/* Service radio options */
+.imei-services{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-top:5px}
+.imei-svc{display:flex;flex-direction:column;padding:12px;border:2px solid #e2e8f0;border-radius:9px;cursor:pointer;transition:border .3s}
+.imei-svc:hover{border-color:#4f46e5}
+.imei-svc input{accent-color:#4f46e5;margin-bottom:5px}
+.imei-svc span:first-of-type{font-weight:500;font-size:14px;color:#334155}
+.imei-price{font-weight:700;color:#4f46e5;font-size:15px}
+.imei-price.free{color:#10b981}
+/* Loading */
+.imei-loading{text-align:center;padding:40px}
+.imei-spinner{width:45px;height:45px;border:4px solid #e2e8f0;border-top-color:#4f46e5;border-radius:50%;animation:imeiSpin .9s linear infinite;margin:0 auto 12px}
+@keyframes imeiSpin{to{transform:rotate(360deg)}}
+/* Error + Result */
+.imei-error{text-align:center;padding:20px;color:#ef4444;font-weight:500;margin:0 28px 24px}
+.imei-result{padding:25px}
+.imei-result-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;padding-bottom:12px;border-bottom:2px solid #e2e8f0}
+.imei-result-head h3{margin:0;color:#1e293b}
+.imei-btn-new{padding:9px 18px;background:#f1f5f9;border:none;border-radius:7px;cursor:pointer;font-weight:600;font-size:13px}
+.imei-btn-new:hover{background:#e2e8f0}
+.imei-result-body{background:#f8fafc;border-radius:9px;padding:6px 18px}
+.imei-row{display:flex;padding:11px 0;border-bottom:1px solid #e2e8f0;flex-wrap:wrap;gap:4px}
+.imei-row:last-child{border-bottom:none}
+.imei-row-label{width:170px;font-weight:600;color:#1e293b;font-size:14px}
+.imei-row-val{flex:1;color:#334155;font-size:14px;text-align:right;word-break:break-word}
+.imei-row-val.bad{color:#ef4444;font-weight:700}
+/* Two-column helper */
+.imei-row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.imei-row2 input,.imei-row2 select{width:100%;padding:12px 14px;border:2px solid #e2e8f0;border-radius:9px;font-size:15px;background:#f8fafc;box-sizing:border-box}
+.imei-row2 input:focus,.imei-row2 select:focus{outline:none;border-color:#4f46e5;background:#fff}
+@media(max-width:600px){
+    .imei-input-row{flex-direction:column}
+    .imei-btn{width:100%}
+    .imei-services{grid-template-columns:1fr 1fr}
+    .imei-result{padding:18px}
+    .imei-error{margin:0 18px 18px}
+    .imei-row-label{width:100%}
+    .imei-row-val{text-align:left}
+}

@@ -1,0 +1,79 @@
+/* ============ MultyTools CSS v1.0 ============ */
+.mt-wrap{max-width:900px;margin:0 auto;padding:10px;font-family:inherit}
+.mt-tool{background:#fff;border-radius:16px;padding:28px;box-shadow:0 6px 24px rgba(0,0,0,.08);border:1px solid #eef2f7}
+.mt-title{font-size:22px;margin:0 0 8px;color:#1e293b;display:flex;align-items:center;gap:8px}
+.mt-emoji{font-size:26px}
+.mt-note{margin:0 0 18px;color:#64748b;font-size:14px}
+.mt-subtitle{font-size:15px;color:#334155;margin:18px 0 10px;font-weight:700;border-bottom:2px solid #e2e8f0;padding-bottom:6px}
+.mt-field{margin-bottom:16px}
+.mt-field label{display:block;font-weight:600;margin-bottom:6px;color:#334155;font-size:14px}
+.mt-field input[type=number],.mt-field input[type=text],.mt-field input[type=date],.mt-field select,.mt-field textarea{width:100%;padding:12px 15px;border:2px solid #e2e8f0;border-radius:9px;font-size:15px;background:#f8fafc;transition:border-color .25s;box-sizing:border-box}
+.mt-field input:focus,.mt-field select:focus,.mt-field textarea:focus{outline:none;border-color:#4f46e5;background:#fff}
+.mt-field textarea{resize:vertical;line-height:1.6;font-family:inherit}
+.mt-row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+/* Buttons */
+.mt-btn{display:inline-block;padding:13px 30px;background:linear-gradient(135deg,#4f46e5,#6366f1);color:#fff;border:none;border-radius:9px;font-size:15px;font-weight:600;cursor:pointer;transition:transform .2s,box-shadow .2s;margin-top:4px}
+.mt-btn:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(79,70,229,.35)}
+.mt-btn-sm{display:inline-block;padding:10px 16px;background:#eef2ff;color:#4338ca!important;border:1px solid #c7d2fe;border-radius:8px;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;margin:3px 3px 3px 0}
+.mt-btn-sm:hover{background:#4f46e5;color:#fff!important;border-color:#4f46e5}
+.mt-btn-light{background:#f1f5f9;color:#475569!important;border:1px solid #e2e8f0}
+.mt-btn-light:hover{background:#e2e8f0;box-shadow:none;transform:none}
+.mt-copy-btn{padding:10px 16px;background:#4f46e5;color:#fff;border:none;border-radius:7px;cursor:pointer;font-size:13px;font-weight:600;white-space:nowrap}
+.mt-copy-btn:hover{background:#6366f1}
+.mt-btn-group{margin-top:12px;display:flex;flex-wrap:wrap;align-items:center;gap:4px}
+/* Results */
+.mt-result{background:linear-gradient(135deg,#eef2ff,#ecfeff);border-radius:12px;padding:18px 20px;margin-top:18px;border-left:4px solid #4f46e5;display:none}
+.mt-res-row{display:flex;justify-content:space-between;align-items:center;padding:10px 0;border-bottom:1px dashed #c7d2fe;flex-wrap:wrap;gap:6px;text-align:right}
+.mt-res-row:last-child{border-bottom:none}
+.mt-res-row span{color:#475569;font-size:14px}
+.mt-res-row strong{font-size:17px;color:#1e293b;margin-left:auto;text-transform:capitalize}
+.mt-highlight{color:#4f46e5!important}
+.mt-green{color:#059669!important}
+.mt-res-big{text-align:center;font-size:24px;font-weight:700;color:#1e293b;padding:10px;line-height:1.6}
+/* Error */
+.mt-error{background:#fef2f2;color:#dc2626;padding:12px 16px;border-radius:9px;margin-top:15px;font-size:14px;font-weight:500;border-left:4px solid #ef4444;display:none}
+/* Checks */
+.mt-checks{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px;margin-bottom:16px}
+.mt-check{display:flex;align-items:center;gap:8px;padding:10px 12px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;cursor:pointer;font-size:14px}
+.mt-check input{accent-color:#4f46e5;width:16px;height:16px}
+/* Details */
+.mt-details{border:1px solid #e2e8f0;border-radius:10px;padding:12px 16px;margin-bottom:16px;background:#fafbfd}
+.mt-details summary{cursor:pointer;font-weight:600;color:#4f46e5;font-size:14px;user-select:none}
+.mt-details[open] summary{margin-bottom:8px}
+/* Love calculator */
+.mt-love-score{text-align:center;font-size:20px;font-weight:600;color:#334155;padding:15px 0;line-height:1.8}
+/* Hash items */
+.mt-hash-item{margin-bottom:12px}
+.mt-hash-item>label{display:block;font-weight:700;font-size:13px;color:#4f46e5;margin-bottom:5px;text-transform:uppercase}
+.mt-inline-copy{display:flex;gap:8px}
+.mt-inline-copy input{flex:1;padding:11px 14px;border:2px solid #e2e8f0;border-radius:8px;font-size:13px;font-family:monospace;background:#f8fafc;min-width:0}
+.mt-inline-copy input:focus{outline:none;border-color:#4f46e5}
+/* Color converter */
+.mt-color-layout{display:grid;grid-template-columns:auto 1fr;gap:25px;align-items:start}
+.mt-color-picker-side{display:flex;flex-direction:column;gap:14px;align-items:center}
+.mt-color-picker-side input[type=color]{width:120px;height:120px;border:none;border-radius:50%;cursor:pointer;padding:0;background:none}
+.mt-color-picker-side input[type=color]::-webkit-color-swatch-wrapper{padding:0}
+.mt-color-picker-side input[type=color]::-webkit-color-swatch{border:3px solid #e2e8f0;border-radius:50%}
+.mt-color-preview{width:80px;height:80px;border-radius:14px;border:3px solid #e2e8f0;box-shadow:inset 0 -20px 30px rgba(0,0,0,.08)}
+/* Responsive */
+@media(max-width:600px){
+    .mt-tool{padding:20px}
+    .mt-row2,.mt-color-layout{grid-template-columns:1fr}
+    .mt-color-picker-side{flex-direction:row;justify-content:center}
+    .mt-title{font-size:19px}
+    .mt-res-big{font-size:19px}
+    .mt-highlight{font-size:inherit!important}
+}
+
+/* Fancy/Stylish Text Generator output rows */
+.mt-fancy-list{margin-top:16px;display:flex;flex-direction:column;gap:10px}
+.mt-fancy-row{display:flex;align-items:center;gap:10px;padding:12px 14px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px}
+.mt-fancy-row-text{flex:1;min-width:0;font-size:16px;color:#1e293b;word-break:break-word;line-height:1.5}
+.mt-fancy-row-label{font-size:11px;color:#94a3b8;font-weight:700;text-transform:uppercase;letter-spacing:.4px;margin-bottom:3px;display:block}
+.mt-fancy-empty{color:#94a3b8;font-size:14px;padding:10px 2px}
+/* QR Code Generator */
+.mt-qr-preview-wrap{text-align:center;margin:20px 0;padding:20px;background:#f8fafc;border-radius:12px;border:1px solid #e2e8f0}
+.mt-qr-preview-wrap canvas{max-width:100%;border-radius:8px;box-shadow:0 4px 14px rgba(0,0,0,.08);background:#fff}
+.mt-qr-fields{margin-top:4px}
+input[type=range]{width:100%;accent-color:#4f46e5}
+input[type=color]{width:100%;height:44px;padding:4px;border:2px solid #e2e8f0;border-radius:9px;cursor:pointer;background:#f8fafc}
